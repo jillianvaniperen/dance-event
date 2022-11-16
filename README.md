@@ -1,2 +1,3 @@
-# dance-event
-Case Capgemini
+Case Dance Event
+
+Opdracht voor Capgemini 
