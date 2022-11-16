@@ -1,6 +1,7 @@
 package Entity;
+import java.io.Serializable;
 
-public class Set {
+public class Set implements Serializable {
     private String nameSet;
     private int beginTime;
     private int endTime;

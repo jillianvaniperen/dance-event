@@ -1,6 +1,7 @@
 package Entity;
+import java.io.Serializable;
 
-public class DJ {
+public class DJ implements Serializable{
     private String name;
     private String musicStyle;
 

@@ -1,6 +1,7 @@
 package Entity;
+import java.io.Serializable;
 
-public class Review {
+public class Review implements Serializable {
     private int rating;
     private String comment;
 
