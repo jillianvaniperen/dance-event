@@ -1,41 +1,42 @@
 package Entity;
 import java.io.Serializable;
+import java.time.format.DateTimeFormatter;
 
 public class Set implements Serializable {
     private String nameSet;
-    private int beginTime;
-    private int endTime;
+    private DateTimeFormatter beginTime;
+    private DateTimeFormatter endTime;
     private String day;
     private String stage;
 
     public Set() {}
 
     public String getNameSet() {
-        return nameSet;
+        return this.nameSet;
     }
 
     public void setNameSet(String nameSet) {
         this.nameSet = nameSet;
     }
 
-    public int getBeginTime() {
-        return beginTime;
+    public DateTimeFormatter getBeginTime() {
+        return this.beginTime;
     }
 
-    public void setBeginTime(int beginTime) {
+    public void setBeginTime(DateTimeFormatter beginTime) {
         this.beginTime = beginTime;
     }
 
-    public int getEndTime() {
-        return endTime;
+    public DateTimeFormatter getEndTime() {
+        return this.endTime;
     }
 
-    public void setEndTime(int endTime) {
+    public void setEndTime(DateTimeFormatter endTime) {
         this.endTime = endTime;
     }
 
     public String getDay() {
-        return day;
+        return this.day;
     }
 
     public void setDay(String day) {
@@ -43,7 +44,7 @@ public class Set implements Serializable {
     }
 
     public String getStage() {
-        return stage;
+        return this.stage;
     }
 
     public void setStage(String stage) {

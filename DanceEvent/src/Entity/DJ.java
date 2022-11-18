@@ -7,19 +7,14 @@ public class DJ implements Serializable{
 
     public DJ() {}
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return this.name; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) { this.name = name; }
 
-    public String getMusicStyle() {
-        return musicStyle;
-    }
+    public String getMusicStyle() { return this.musicStyle; }
 
     public void setMusicStyle(String musicStyle) {
         this.musicStyle = musicStyle;
     }
 }
+
