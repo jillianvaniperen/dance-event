@@ -37,21 +37,3 @@ public class Application {
     }
 }
 
-//    public static void menuOption1() {
-//        System.out.println("Line-up Friday");
-//    }
-//
-//    public static void menuOption2() {
-//        System.out.println("Line-up Saturday");
-//    }
-//
-//    public static void menuOption3() {
-//        System.out.println("Line-up Sunday");
-//    }
-//
-//    public static void menuOption4() {
-//        System.out.println("Write a review");
-//    }
-//}
-//
-//
