@@ -1,7 +1,12 @@
+import entity.DJ;
+import entity.Set;
+import helper.HelperDJ;
+import helper.HelperSet;
+
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-import static Helper.HelperClass.*;
+import static helper.HelperApplication.*;
 
 public class Application {
     public static void main(String[] args) {
@@ -34,6 +39,18 @@ public class Application {
                 System.out.println("Invalid option, try again");
             }
         } while (option > 4 || option < 1);
+
+        HelperDJ helperDJ = new HelperDJ();
+
+        helperDJ.save(new DJ(1,"DJ Jean", "Mellow"));
+        helperDJ.save(new DJ(2,"La Fuente", "Retro"));
+        helperDJ.save(new DJ(3,"Marboo", "Retro"));
+
+        HelperSet helperSet = new HelperSet();
+
+        helperSet.save(new Set(1, "Mellow Yellow", "17.00", "21.00", "Friday", "Main stage"));
+        helperSet.save(new Set(2, "Strictly Ballroom", "13:00", "15:00", "Saturday", "Small stage"));
+
     }
 }
 

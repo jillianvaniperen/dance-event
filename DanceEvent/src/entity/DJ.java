@@ -1,11 +1,22 @@
-package Entity;
+package entity;
 import java.io.Serializable;
 
 public class DJ implements Serializable{
+    private long ID;
     private String name;
     private String musicStyle;
 
     public DJ() {}
+
+    public DJ(long ID, String name, String musicStyle) {
+        this.ID = ID;
+        this.name = name;
+        this.musicStyle = musicStyle;
+    }
+
+    public long getID() { return this.ID; }
+
+    public void setID() { this.ID = ID; }
 
     public String getName() { return this.name; }
 

@@ -1,8 +1,8 @@
-package Entity;
+package entity;
 import java.io.Serializable;
-import java.time.format.DateTimeFormatter;
 
 public class Set implements Serializable {
+    private long setID;
     private String nameSet;
     private String beginTime;
     private String endTime;
@@ -10,6 +10,19 @@ public class Set implements Serializable {
     private String stage;
 
     public Set() {}
+
+    public Set(long setID, String nameSet, String beginTime, String endTime, String day, String stage) {
+        this.setID = setID;
+        this.nameSet = nameSet;
+        this.beginTime = beginTime;
+        this.endTime = endTime;
+        this.day = day;
+        this.stage = stage;
+    }
+
+    public long getSetID() { return setID; }
+
+    public void setSetID(long setID) { this.setID = setID; }
 
     public String getNameSet() {
         return this.nameSet;
